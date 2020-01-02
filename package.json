@@ -1,0 +1,26 @@
+{
+  "name": "safeguards-terraform",
+  "version": "0.0.01",
+  "description": "Safeaguards for Terraform",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "nyc mocha --forbid-only \"test/*.test.js\"",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "run": "node ./src/version.js",
+    "lint": "eslint . --fix --cache"
+  },
+  "dependencies": {
+    "jsonata": "^1.7.0",
+    "safeguards-sdk": "../sdk",
+    "semver": "^7.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1"
+  }
+}
