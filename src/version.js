@@ -1,5 +1,5 @@
 const semver = require('semver');
-const { Safeguard } = require("safeguards-sdk");
+const { Safeguard } = require("@safeguards/sdk");
 
 class TerraformVersionSafeguard extends Safeguard {
   check(data, settings) {

@@ -1,5 +1,5 @@
 const jsonata = require('jsonata');
-const { Safeguard } = require("safeguards-sdk");
+const { Safeguard } = require("@safeguards/sdk");
 
 class TerraformAllowedModules extends Safeguard {
   check(data, settings) {

@@ -1,6 +1,6 @@
 {
-  "name": "safeguards-terraform",
-  "version": "0.0.01",
+  "name": "@safeguards/safeguards-terraform",
+  "version": "0.0.02",
   "description": "Safeaguards for Terraform",
   "main": "index.js",
   "license": "MIT",
@@ -11,8 +11,8 @@
     "lint": "eslint . --fix --cache"
   },
   "dependencies": {
+    "@safeguards/sdk": "^0.0.30",
     "jsonata": "^1.7.0",
-    "safeguards-sdk": "../sdk",
     "semver": "^7.1.1"
   },
   "devDependencies": {
